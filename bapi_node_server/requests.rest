@@ -1,0 +1,16 @@
+GET http://localhost:3443/api/coin/account
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHAiOiJjb2luYmFzZSIsInBvcnQiOjM0NDMsImlwIjoiNDEuMjAzLjIyOS43NCIsImlhdCI6MTYzNjE5MDE3NiwiZXhwIjoxNjM2Mjc2NTc2fQ.P0jEcBbmwQm-3tico_hzog-gtN6bh-SV1brVpUJYrEc
+Content-Type: application/json
+
+    userId : 'account'
+
+# ###
+# GET http://localhost:3443/api/coin/ipAddress
+
+# ###
+# GET  http://localhost:3000/api/chat
+
+# ###
+# GET http://localhost:3443/api/coin/token
+
+# # require('crypto').randomBytes(64).toString('hex')

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sample.ManagerActivity">
+
+
+    <TextView
+        android:id="@+id/manager_textview_username"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Who is connected"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/manager_textview_ussdResponse"
+        android:layout_width="377dp"
+        android:layout_height="256dp"
+        android:layout_below="@+id/manager_textview_username"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="28dp"
+        android:hint="USSD response: "
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/manager_button_ping"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_below="@+id/manager_textview_ussdResponse"
+        android:layout_marginTop="21dp"
+        android:text="Ping" />
+
+    <Button
+        android:id="@+id/manager_button_test"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_below="@+id/manager_button_ping"
+        android:layout_marginTop="12dp"
+        android:text="Test" />
+
+    <Button
+        android:id="@+id/manager_button_close"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_below="@+id/manager_button_test"
+        android:layout_marginTop="12dp"
+        android:text="Close" />
+
+    <TextView
+        android:id="@+id/manager_textview_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_below="@+id/manager_button_close"
+        android:layout_marginTop="33dp"
+        android:layout_centerInParent="true"
+        android:hint="xxxxxxxxxxxxx"
+        android:textSize="16dp" />
+
+
+</RelativeLayout>

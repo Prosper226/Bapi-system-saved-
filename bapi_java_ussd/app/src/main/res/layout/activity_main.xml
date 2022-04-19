@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sample.MainActivity">
+
+    <EditText
+        android:id="@+id/main_edittext_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="Enter your username !"
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/main_edittext_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password"
+        android:layout_below="@+id/main_edittext_username"
+        android:textSize="22dp" />
+
+    <Button
+        android:id="@+id/main_button_connexion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_edittext_password"
+        android:layout_marginTop="41dp"
+        android:text="Connexion" />
+
+    <TextView
+        android:id="@+id/main_textview_connexionResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/main_button_connexion"
+        android:layout_marginTop="41dp"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>
