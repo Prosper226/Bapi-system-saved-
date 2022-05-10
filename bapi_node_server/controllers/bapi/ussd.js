@@ -231,8 +231,9 @@ exports.create_withdraw_transaction = async (req, res, next) => {
                             "txid" : add_transaction.transId,
                             "request" : "sendMoney", 
                         }
-                        var endpoind = process.env.BAPI_SEND_MONEY_ENDPOINT
-                        let send_money = await makeRequest("POST", body, endpoind, {})
+                        var endpoint = process.env.BAPI_SEND_MONEY_ENDPOINT
+                        console.log(endpoint)
+                        let send_money = await makeRequest("POST", body, endpoint, {})
                         let http_data = {data: display_transaction_data(add_transaction), success: send_money.socket}
                         http_response(res, http_data, 201, 200)
                     
